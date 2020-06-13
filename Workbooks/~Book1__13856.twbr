@@ -1,0 +1,908 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0427.1803                               -->
+<workbook source-build='2020.1.3 (20201.20.0427.1803)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1+ (Multiple Connections)' inline='true' name='federated.1dm4g9h0agjff012b42450nz8gxq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Sample' name='excel-direct.1gc3ocj1ux8qmj1cyrsfx01n4c68'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/saikrishna/Desktop/Sample.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='Dump' name='excel-direct.1nntql21np2ifx1gjit4w0ao1u3v'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/saikrishna/Desktop/Dump.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Sheet1].[CDK Assignee]' />
+              <expression op='[Sheet11].[CDK Assignee]' />
+            </expression>
+          </clause>
+          <relation connection='excel-direct.1nntql21np2ifx1gjit4w0ao1u3v' name='Sheet1' table='[Sheet1$]' type='table'>
+            <columns gridOrigin='A1:W62:no:A1:W62:0' header='yes' outcome='2'>
+              <column datatype='string' name='Activity ID' ordinal='0' />
+              <column datatype='date' name='EID' ordinal='1' />
+              <column datatype='string' name='CDK Assignee' ordinal='2' />
+              <column datatype='string' name='Project Work Number' ordinal='3' />
+              <column datatype='string' name='Project Work Name' ordinal='4' />
+              <column datatype='string' name='Lithia Motors' ordinal='5' />
+              <column datatype='string' name='Site Name' ordinal='6' />
+              <column datatype='string' name='Milestone Description' ordinal='7' />
+              <column datatype='string' name='Activity Description' ordinal='8' />
+              <column datatype='string' name='Status' ordinal='9' />
+              <column datatype='string' name='Rush' ordinal='10' />
+              <column datatype='string' name='Project Work Client Manager' ordinal='11' />
+              <column datatype='date' name='Created Date' ordinal='12' />
+              <column datatype='date' name='Planned Start date' ordinal='13' />
+              <column datatype='date' name='Planned End date' ordinal='14' />
+              <column datatype='date' name='Actual Start DT' ordinal='15' />
+              <column datatype='date' name='Actual End DT' ordinal='16' />
+              <column datatype='integer' name='Cycle Time' ordinal='17' />
+              <column datatype='integer' name='TAKT Time' ordinal='18' />
+              <column datatype='string' name='CMF' ordinal='19' />
+              <column datatype='string' name='Standard Comments' ordinal='20' />
+              <column datatype='string' name='Comments' ordinal='21' />
+              <column datatype='string' name='Finding' ordinal='22' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1nntql21np2ifx1gjit4w0ao1u3v' name='Sheet11' table='[Sheet1$]' type='table'>
+            <columns gridOrigin='A1:W62:no:A1:W62:0' header='yes' outcome='2'>
+              <column datatype='string' name='Activity ID' ordinal='0' />
+              <column datatype='date' name='EID' ordinal='1' />
+              <column datatype='string' name='CDK Assignee' ordinal='2' />
+              <column datatype='string' name='Project Work Number' ordinal='3' />
+              <column datatype='string' name='Project Work Name' ordinal='4' />
+              <column datatype='string' name='Lithia Motors' ordinal='5' />
+              <column datatype='string' name='Site Name' ordinal='6' />
+              <column datatype='string' name='Milestone Description' ordinal='7' />
+              <column datatype='string' name='Activity Description' ordinal='8' />
+              <column datatype='string' name='Status' ordinal='9' />
+              <column datatype='string' name='Rush' ordinal='10' />
+              <column datatype='string' name='Project Work Client Manager' ordinal='11' />
+              <column datatype='date' name='Created Date' ordinal='12' />
+              <column datatype='date' name='Planned Start date' ordinal='13' />
+              <column datatype='date' name='Planned End date' ordinal='14' />
+              <column datatype='date' name='Actual Start DT' ordinal='15' />
+              <column datatype='date' name='Actual End DT' ordinal='16' />
+              <column datatype='integer' name='Cycle Time' ordinal='17' />
+              <column datatype='integer' name='TAKT Time' ordinal='18' />
+              <column datatype='string' name='CMF' ordinal='19' />
+              <column datatype='string' name='Standard Comments' ordinal='20' />
+              <column datatype='string' name='Comments' ordinal='21' />
+              <column datatype='string' name='Finding' ordinal='22' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[Activity Description (Sheet11)]' value='[Sheet11].[Activity Description]' />
+          <map key='[Activity Description]' value='[Sheet1].[Activity Description]' />
+          <map key='[Activity ID (Sheet11)]' value='[Sheet11].[Activity ID]' />
+          <map key='[Activity ID]' value='[Sheet1].[Activity ID]' />
+          <map key='[Actual End DT (Sheet11)]' value='[Sheet11].[Actual End DT]' />
+          <map key='[Actual End DT]' value='[Sheet1].[Actual End DT]' />
+          <map key='[Actual Start DT (Sheet11)]' value='[Sheet11].[Actual Start DT]' />
+          <map key='[Actual Start DT]' value='[Sheet1].[Actual Start DT]' />
+          <map key='[CDK Assignee (Sheet11)]' value='[Sheet11].[CDK Assignee]' />
+          <map key='[CDK Assignee]' value='[Sheet1].[CDK Assignee]' />
+          <map key='[CMF (Sheet11)]' value='[Sheet11].[CMF]' />
+          <map key='[CMF]' value='[Sheet1].[CMF]' />
+          <map key='[Comments (Sheet11)]' value='[Sheet11].[Comments]' />
+          <map key='[Comments]' value='[Sheet1].[Comments]' />
+          <map key='[Created Date (Sheet11)]' value='[Sheet11].[Created Date]' />
+          <map key='[Created Date]' value='[Sheet1].[Created Date]' />
+          <map key='[Cycle Time (Sheet11)]' value='[Sheet11].[Cycle Time]' />
+          <map key='[Cycle Time]' value='[Sheet1].[Cycle Time]' />
+          <map key='[EID (Sheet11)]' value='[Sheet11].[EID]' />
+          <map key='[EID]' value='[Sheet1].[EID]' />
+          <map key='[Finding (Sheet11)]' value='[Sheet11].[Finding]' />
+          <map key='[Finding]' value='[Sheet1].[Finding]' />
+          <map key='[Lithia Motors (Sheet11)]' value='[Sheet11].[Lithia Motors]' />
+          <map key='[Lithia Motors]' value='[Sheet1].[Lithia Motors]' />
+          <map key='[Milestone Description (Sheet11)]' value='[Sheet11].[Milestone Description]' />
+          <map key='[Milestone Description]' value='[Sheet1].[Milestone Description]' />
+          <map key='[Planned End date (Sheet11)]' value='[Sheet11].[Planned End date]' />
+          <map key='[Planned End date]' value='[Sheet1].[Planned End date]' />
+          <map key='[Planned Start date (Sheet11)]' value='[Sheet11].[Planned Start date]' />
+          <map key='[Planned Start date]' value='[Sheet1].[Planned Start date]' />
+          <map key='[Project Work Client Manager (Sheet11)]' value='[Sheet11].[Project Work Client Manager]' />
+          <map key='[Project Work Client Manager]' value='[Sheet1].[Project Work Client Manager]' />
+          <map key='[Project Work Name (Sheet11)]' value='[Sheet11].[Project Work Name]' />
+          <map key='[Project Work Name]' value='[Sheet1].[Project Work Name]' />
+          <map key='[Project Work Number (Sheet11)]' value='[Sheet11].[Project Work Number]' />
+          <map key='[Project Work Number]' value='[Sheet1].[Project Work Number]' />
+          <map key='[Rush (Sheet11)]' value='[Sheet11].[Rush]' />
+          <map key='[Rush]' value='[Sheet1].[Rush]' />
+          <map key='[Site Name (Sheet11)]' value='[Sheet11].[Site Name]' />
+          <map key='[Site Name]' value='[Sheet1].[Site Name]' />
+          <map key='[Standard Comments (Sheet11)]' value='[Sheet11].[Standard Comments]' />
+          <map key='[Standard Comments]' value='[Sheet1].[Standard Comments]' />
+          <map key='[Status (Sheet11)]' value='[Sheet11].[Status]' />
+          <map key='[Status]' value='[Sheet1].[Status]' />
+          <map key='[TAKT Time (Sheet11)]' value='[Sheet11].[TAKT Time]' />
+          <map key='[TAKT Time]' value='[Sheet1].[TAKT Time]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Activity ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Activity ID]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Activity ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EID</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[EID]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>EID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CDK Assignee</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CDK Assignee]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CDK Assignee</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Project Work Number</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Project Work Number]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Project Work Number</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Project Work Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Project Work Name]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Project Work Name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lithia Motors</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Lithia Motors]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Lithia Motors</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Site Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Site Name]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Site Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Milestone Description]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Milestone Description</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Activity Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Activity Description]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Activity Description</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rush</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Rush]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Rush</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Project Work Client Manager</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Project Work Client Manager]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Project Work Client Manager</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Created Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Created Date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Created Date</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Planned Start date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Planned Start date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Planned Start date</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Planned End date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Planned End date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Planned End date</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actual Start DT</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Actual Start DT]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Actual Start DT</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actual End DT</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Actual End DT]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Actual End DT</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cycle Time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cycle Time]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Cycle Time</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TAKT Time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TAKT Time]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>TAKT Time</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CMF</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CMF]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CMF</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Standard Comments</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Standard Comments]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Standard Comments</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Comments</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Comments]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Comments</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Finding</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Finding]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Finding</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:W62:no:A1:W62:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Activity ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Activity ID (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Activity ID</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EID</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[EID (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>EID</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CDK Assignee</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CDK Assignee (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>CDK Assignee</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Project Work Number</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Project Work Number (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Project Work Number</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Project Work Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Project Work Name (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Project Work Name</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lithia Motors</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Lithia Motors (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Lithia Motors</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Site Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Site Name (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Site Name</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Milestone Description (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Milestone Description</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Activity Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Activity Description (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Activity Description</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Status (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rush</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Rush (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Rush</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Project Work Client Manager</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Project Work Client Manager (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Project Work Client Manager</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Created Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Created Date (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Created Date</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Planned Start date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Planned Start date (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Planned Start date</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Planned End date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Planned End date (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Planned End date</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actual Start DT</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Actual Start DT (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Actual Start DT</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actual End DT</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Actual End DT (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Actual End DT</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cycle Time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cycle Time (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Cycle Time</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TAKT Time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TAKT Time (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>TAKT Time</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CMF</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CMF (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>CMF</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Standard Comments</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Standard Comments (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Standard Comments</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Comments</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Comments (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Comments</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Finding</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Finding (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Finding</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:W62:no:A1:W62:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.651452' measure-ordering='alphabetic' measure-percentage='0.348548' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1+ (Multiple Connections)' name='federated.1dm4g9h0agjff012b42450nz8gxq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dm4g9h0agjff012b42450nz8gxq'>
+            <column datatype='string' name='[CDK Assignee]' role='dimension' type='nominal' />
+            <column datatype='string' name='[CMF]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Planned Start date (Sheet11)]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Project Work Name]' role='dimension' type='nominal' />
+            <column-instance column='[Planned Start date (Sheet11)]' derivation='Attribute' name='[attr:Planned Start date (Sheet11):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[CDK Assignee]' derivation='None' name='[none:CDK Assignee:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CMF]' derivation='None' name='[none:CMF:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Project Work Name]' derivation='None' name='[none:Project Work Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1dm4g9h0agjff012b42450nz8gxq].[none:CDK Assignee:nk] / ([federated.1dm4g9h0agjff012b42450nz8gxq].[none:CMF:nk] / ([federated.1dm4g9h0agjff012b42450nz8gxq].[none:Project Work Name:nk] / [federated.1dm4g9h0agjff012b42450nz8gxq].[attr:Planned Start date (Sheet11):ok])))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{29B313AF-93F7-4009-867F-E372B957B379}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{79E8C2EC-7A57-4963-B00B-76999BF9DD2E}' />
+    </window>
+  </windows>
+</workbook>

@@ -1,0 +1,778 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0427.1803                               -->
+<workbook source-build='2020.1.3 (20201.20.0427.1803)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='opencases' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Leader Wise+ (5-19  Open Cases)' inline='true' name='federated.0j4rh5l1sprgbw12lt6011f0m01w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='5-19  Open Cases' name='excel-direct.06uvkfq1d7dci3138kn2110732d3'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/saikrishna/Desktop/5-19  Open Cases.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.06uvkfq1d7dci3138kn2110732d3' name='Sheet1 Table3' table='[Sheet1$Table3]' type='table'>
+          <columns gridOrigin='D9:T475:no:A1:T475:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Sub/Case#' ordinal='0' />
+            <column datatype='integer' name='CMF#' ordinal='1' />
+            <column datatype='string' name='DealerName' ordinal='2' />
+            <column datatype='string' name='CaseSubject' ordinal='3' />
+            <column datatype='string' name='CaseOwner' ordinal='4' />
+            <column datatype='date' name='DateCreated' ordinal='5' />
+            <column datatype='date' name='CallBackDate' ordinal='6' />
+            <column datatype='integer' name='TotalAge' ordinal='7' />
+            <column datatype='integer' name='LastModified' ordinal='8' />
+            <column datatype='integer' name='CBEMissed' ordinal='9' />
+            <column datatype='integer' name='BinTime (Days)' ordinal='10' />
+            <column datatype='string' name='Last2QueueName' ordinal='11' />
+            <column datatype='string' name='Condition' ordinal='12' />
+            <column datatype='string' name='Status' ordinal='13' />
+            <column datatype='string' name='Priority' ordinal='14' />
+            <column datatype='string' name='Supervisor' ordinal='15' />
+            <column datatype='string' name='&gt;30' ordinal='16' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Sub/Case#</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sub/Case#]</local-name>
+            <parent-name>[Sheet1 Table3]</parent-name>
+            <remote-alias>Sub/Case#</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CMF#</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CMF#]</local-name>
+            <parent-name>[Sheet1 Table3]</parent-name>
+            <remote-alias>CMF#</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DealerName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DealerName]</local-name>
+            <parent-name>[Sheet1 Table3]</parent-name>
+            <remote-alias>DealerName</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CaseSubject</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CaseSubject]</local-name>
+            <parent-name>[Sheet1 Table3]</parent-name>
+            <remote-alias>CaseSubject</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CaseOwner</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CaseOwner]</local-name>
+            <parent-name>[Sheet1 Table3]</parent-name>
+            <remote-alias>CaseOwner</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DateCreated</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DateCreated]</local-name>
+            <parent-name>[Sheet1 Table3]</parent-name>
+            <remote-alias>DateCreated</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CallBackDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[CallBackDate]</local-name>
+            <parent-name>[Sheet1 Table3]</parent-name>
+            <remote-alias>CallBackDate</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalAge</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalAge]</local-name>
+            <parent-name>[Sheet1 Table3]</parent-name>
+            <remote-alias>TotalAge</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LastModified</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LastModified]</local-name>
+            <parent-name>[Sheet1 Table3]</parent-name>
+            <remote-alias>LastModified</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CBEMissed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CBEMissed]</local-name>
+            <parent-name>[Sheet1 Table3]</parent-name>
+            <remote-alias>CBEMissed</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BinTime (Days)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BinTime (Days)]</local-name>
+            <parent-name>[Sheet1 Table3]</parent-name>
+            <remote-alias>BinTime (Days)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last2QueueName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Last2QueueName]</local-name>
+            <parent-name>[Sheet1 Table3]</parent-name>
+            <remote-alias>Last2QueueName</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Condition]</local-name>
+            <parent-name>[Sheet1 Table3]</parent-name>
+            <remote-alias>Condition</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[Sheet1 Table3]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Priority</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Priority]</local-name>
+            <parent-name>[Sheet1 Table3]</parent-name>
+            <remote-alias>Priority</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Supervisor</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Supervisor]</local-name>
+            <parent-name>[Sheet1 Table3]</parent-name>
+            <remote-alias>Supervisor</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&gt;30</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[&gt;30]</local-name>
+            <parent-name>[Sheet1 Table3]</parent-name>
+            <remote-alias>&gt;30</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1 Table3]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>3</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;D9:T475:no:A1:T475:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='CBE Missed' datatype='integer' name='[CBEMissed]' role='measure' type='quantitative' />
+      <column caption='Cmf#' datatype='integer' name='[CMF#]' role='measure' type='quantitative' />
+      <column caption='MIN' datatype='date' name='[Calculation_658932973265240064]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='MIN([DateCreated])' />
+      </column>
+      <column caption='count' datatype='integer' name='[Calculation_658932973270269954]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Sub/Case#])' />
+      </column>
+      <column caption='max' datatype='integer' name='[Calculation_658932973280972803]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MAX([TotalAge])' />
+      </column>
+      <column caption='Call Back Date' datatype='date' name='[CallBackDate]' role='dimension' type='ordinal' />
+      <column caption='Case Owner' datatype='string' name='[CaseOwner]' role='dimension' type='nominal' />
+      <column caption='Case Subject' datatype='string' name='[CaseSubject]' role='dimension' type='nominal' />
+      <column caption='Date Created' datatype='date' name='[DateCreated]' role='dimension' type='ordinal' />
+      <column caption='Dealer Name' datatype='string' name='[DealerName]' role='dimension' type='nominal' />
+      <column caption='Last Modified' datatype='integer' name='[LastModified]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='CountD' datatype='integer' name='[Sub/Case#]' role='dimension' type='ordinal' />
+      <column caption='Total Age' datatype='integer' name='[TotalAge]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/saikrishna/Documents/My Tableau Repository/Datasources/Leader Wise+ (5-19  Open Cases).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Sub/Case#</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sub/Case#]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sub/Case#</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1 Table3</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>288</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CMF#</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CMF#]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CMF#</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1 Table3</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>259</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DealerName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DealerName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DealerName</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1 Table3</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>257</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CaseSubject</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CaseSubject]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CaseSubject</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1 Table3</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>280</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CaseOwner</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CaseOwner]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CaseOwner</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1 Table3</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DateCreated</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[DateCreated]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DateCreated</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1 Table3</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CallBackDate</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[CallBackDate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CallBackDate</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1 Table3</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalAge</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotalAge]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalAge</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1 Table3</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LastModified</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LastModified]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LastModified</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1 Table3</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CBEMissed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CBEMissed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CBEMissed</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1 Table3</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BinTime (Days)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BinTime (Days)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BinTime (Days)</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1 Table3</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last2QueueName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Last2QueueName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Last2QueueName</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1 Table3</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Condition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Condition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Condition</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Sheet1 Table3</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Status</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Sheet1 Table3</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Priority</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Priority]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Priority</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Sheet1 Table3</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Supervisor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Supervisor]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Supervisor</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Sheet1 Table3</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>&gt;30</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[&gt;30]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>&gt;30</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Sheet1 Table3</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.56639' measure-ordering='alphabetic' measure-percentage='0.43361' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Number Of cases with  each associate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#72b966'>Number of cases with each Associate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Leader Wise+ (5-19  Open Cases)' name='federated.0j4rh5l1sprgbw12lt6011f0m01w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j4rh5l1sprgbw12lt6011f0m01w'>
+            <column caption='count' datatype='integer' name='[Calculation_658932973270269954]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Sub/Case#])' />
+            </column>
+            <column caption='Case Owner' datatype='string' name='[CaseOwner]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='integer' name='[Sub/Case#]' role='dimension' type='ordinal' />
+            <column-instance column='[CaseOwner]' derivation='None' name='[none:CaseOwner:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_658932973270269954]' derivation='User' name='[usr:Calculation_658932973270269954:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0j4rh5l1sprgbw12lt6011f0m01w].[none:CaseOwner:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:CaseOwner:nk]' />
+              <groupfilter function='member' level='[none:CaseOwner:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0j4rh5l1sprgbw12lt6011f0m01w].[none:CaseOwner:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#d3b348' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0j4rh5l1sprgbw12lt6011f0m01w].[none:CaseOwner:nk]</rows>
+        <cols>[federated.0j4rh5l1sprgbw12lt6011f0m01w].[usr:Calculation_658932973270269954:qk]</cols>
+      </table>
+      <simple-id uuid='{C9FB037A-55AA-4FDF-8A8F-51B69BF6B836}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1BE4DFAA-872D-4129-BCB1-8265C28A8529}' />
+    </worksheet>
+    <worksheet name='cases/case owner and age'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Leader Wise+ (5-19  Open Cases)' name='federated.0j4rh5l1sprgbw12lt6011f0m01w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j4rh5l1sprgbw12lt6011f0m01w'>
+            <column caption='count' datatype='integer' name='[Calculation_658932973270269954]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Sub/Case#])' />
+            </column>
+            <column caption='Case Owner' datatype='string' name='[CaseOwner]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='integer' name='[Sub/Case#]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Supervisor]' role='dimension' type='nominal' />
+            <column caption='Total Age' datatype='integer' name='[TotalAge]' role='measure' type='quantitative' />
+            <column-instance column='[CaseOwner]' derivation='None' name='[none:CaseOwner:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sub/Case#]' derivation='None' name='[none:Sub/Case#:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Supervisor]' derivation='None' name='[none:Supervisor:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TotalAge]' derivation='Sum' name='[sum:TotalAge:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_658932973270269954]' derivation='User' name='[usr:Calculation_658932973270269954:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0j4rh5l1sprgbw12lt6011f0m01w].[none:Sub/Case#:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Sub/Case#:ok]' />
+              <groupfilter function='member' level='[none:Sub/Case#:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0j4rh5l1sprgbw12lt6011f0m01w].[none:Sub/Case#:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0j4rh5l1sprgbw12lt6011f0m01w].[none:Supervisor:nk] / ([federated.0j4rh5l1sprgbw12lt6011f0m01w].[none:CaseOwner:nk] / ([federated.0j4rh5l1sprgbw12lt6011f0m01w].[none:Sub/Case#:ok] / [federated.0j4rh5l1sprgbw12lt6011f0m01w].[usr:Calculation_658932973270269954:ok])))</rows>
+        <cols>[federated.0j4rh5l1sprgbw12lt6011f0m01w].[sum:TotalAge:qk]</cols>
+      </table>
+      <simple-id uuid='{8B8645B1-2585-4C7C-9168-3A300DC6756E}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Number Of cases with  each associate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C7909459-5096-4228-927D-B573E01B752D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='cases/case owner and age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DC0051E3-EE97-4CE4-AE90-7C576EF2EDBF}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AD040B4D-9477-4F00-B197-AF7693C5F8EA}' />
+    </window>
+  </windows>
+</workbook>
